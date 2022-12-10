@@ -20,10 +20,10 @@ function App() {
       </div>
       <p className='py-10 '>
         <a href="https://drive.google.com/file/d/1Zk2XO3VgtjCrFJqWhiNITLgG2AyPgURr/view?usp=share_link" target="blank" download="">
-          <button className="btn btn-primary">Download resume</button>
+          <button className="btn btn-primary ">Download resume</button>
         </a>
       </p>
-      <div className='grid grid-cols-3'>
+      <div className='grid grid-cols-1 lg:grid-cols-3'>
         <div className="card w-96 bg-base-100 shadow-xl">
           <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgE-UJ7ddf2NYP6gd16FtQ8ZN0na1a2hImsA&usqp=CAU" alt="Shoes" /></figure>
           <div className="card-body">
@@ -56,7 +56,18 @@ function App() {
        */}
       <div className='my-10' id='contact-me'>
         <h2 className='font-bold text-center'>Contact me</h2>
+        <div className='mt-10 grid justify-center items-center bg-slate-100'>
+          <form action="https://formsubmit.co/25f3fcd3468f1d729b6d10b9d14c53ab " method="POST" className='py-10'>
+            <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs " required /> <br />
 
+            <input type="email" placeholder="your email" className="input input-bordered w-full  my-10" required /> <br />
+
+            <textarea className="textarea textarea-bordered" placeholder="massage"></textarea> <br />
+            <button className='btn btn-primary ' type='submit'>submit</button>
+
+
+          </form>
+        </div>
       </div>
     </div>
   );
